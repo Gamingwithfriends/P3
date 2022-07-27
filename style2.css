@@ -1,0 +1,84 @@
+header img {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.localisation-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 225, 225);
+    height: 40px;
+}
+
+.localisation-search i {
+    margin-right: 5px;
+    color: rgb(53, 53, 53)
+}
+
+.localisation-search input {
+    color: rgb(53, 53, 53);
+    background-color: rgb(225, 225, 225);
+    border: none;
+    width: 100px;
+    font-size: 14px;
+}
+
+.debut {
+    background-color: rgb(246, 246, 246);
+    padding: 20px;
+}
+
+.debut h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.debut .reserved-para {
+    text-align: center;
+    color: rgb(53, 53, 53);
+}
+
+.debut .reserved-btn {
+    border-radius: 30px;
+    background-color: rgb(169, 93, 219);
+    border: none;
+    position: relative;
+    right: 25%;
+    left: 25%;
+    height: 40px;
+    color: white;
+}
+
+.fonctionnement {
+    padding: 10px;
+}
+
+.fonct-h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.fonct {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(246, 246, 246);
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonct i {
+    margin-right: 10px;
+}
