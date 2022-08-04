@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@300;400;500;600;700;800;900 & family= Shrikhand & display=swap');
+
+
 header img {
     width: 50%;
     position: relative;
@@ -5,7 +9,6 @@ header img {
     right: 25%;
     margin-top: 20px;
     margin-bottom: 20px;
-    /*mettre un box-shadox bottom*/
   }
   header .localisation-search {
     display: flex;
@@ -28,12 +31,12 @@ header img {
   }
   
   .debut {
-    background-color: rgb(246, 246, 246);
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 10px rgba(41,41,41);
   }
   .debut h2 {
     margin-top: 30px;
@@ -46,13 +49,20 @@ header img {
     color: rgb(53, 53, 53);
   }
   .debut .reserved-btn {
+    color: white;
+    text-decoration: none;
+    font-family : 'Shrikhand', cursive ;
     border-radius: 30px;
-    background-color: rgb(169, 93, 219);
     border: none;
     height: 40px;
-    color: white;
-    /*faire dégradé de couleur et box-shadow, refaire la pos et la taille*/
+    background-image: linear-gradient(rgba(147,86,220,.9),rgba(255,121,218,.9));
+    cursor: pointer;
   }
+
+  .card-box-shadow {
+    -webkit-box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.27);
+}
   
   .Fonctionnement {
     padding: 10px;
@@ -63,6 +73,7 @@ header img {
     padding: 10px;
     font-weight: bold;
   }
+
   .Fonctionnement .fonct {
     padding: 10px;
     margin: 10px;
@@ -72,6 +83,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   .Fonctionnement .fonct i {
     margin-right: 10px;
@@ -93,6 +105,17 @@ header img {
     background-color: rgb(246, 246, 246);
     padding-bottom: 30px;
   }
+ 
+  .fas :hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
   .restaurants .resto {
     font-size: 20px;
     margin-top: 30px;
@@ -100,12 +123,26 @@ header img {
     font-weight: bold;
     padding-top: 50px;
   }
+  
+  .new::before {
+    right: 5%;
+    margin-top: 15px;
+    content: "Nouveau";
+    position: absolute;
+    border: 5px solid #99E2D0;
+    color: #008766;
+    background: #99E2D0;
+    height: 20px;
+    width: 60px;
+  }
   .restaurants .r-card {
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 60px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(41,41,41);
+    cursor: pointer;
   }
   .restaurants .r-card img {
     object-fit: cover;
@@ -113,6 +150,7 @@ header img {
     height: 200px;
     border-radius: 20px 20px 0 0;
   }
+  
   .restaurants .r-card .r-like {
     display: flex;
     flex-direction: row;
@@ -125,14 +163,17 @@ header img {
     margin-right: 20px;
   }
   .restaurants .r-card .r-like i:hover {
+    transition: all 100ms;
+    transform: scale(1.02);
     color: blueviolet;
   }
-  .restaurants .r-card .rhp {
+  
+  .restaurants .r-card .description {
     padding: 20px;
     line-height: 20px;
     font-size: 20px;
   }
-  .restaurants .r-card .rhp .r-h3 {
+  .restaurants .r-card .description .r-h3 {
     font-weight: bold;
   }
   
@@ -140,15 +181,107 @@ header img {
     background-color: rgb(53, 53, 53);
     color: white;
   }
-  footer img {
-    padding: 20px 10px 10px 10px;
-    width: 40%;
-  }
+  .footer-logo {
+    color: white;
+    text-decoration: none;
+    font-family : 'Shrikhand', cursive ;
+    font-size: 1.2rem;
+    margin-left: 100px;
+}
   footer .fo-div {
     padding: 10px;
     line-height: 22px;
     font-size: 18px;
   }
+  
   footer i {
     margin-right: 10px;
   }
+
+
+/*Menu a la francaise*/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-page {
+  height: 70px;
+}
+.header-page .h-top {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.header-page .h-top i {
+  background-color: white;
+  padding: 10px;
+}
+.header-page .h-top img {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.img-top {
+  margin: none;
+  top: -20px;
+  left: 0%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.m-page {
+  position: relative;
+  padding: 20px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 50px 50px 0 0;
+  top: -50px;
+  margin-bottom: none;
+}
+.m-page .h2-page {
+  font-weight: bold;
+  font-size: 30px;
+}
+.m-page .sect-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.m-page .sect-page .h3-page {
+  margin-top: 20px;
+  color: grey;
+  font-size: 20px;
+  padding: 10px;
+}
+.m-page .sect-page .card-page {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  line-height: 18px;
+}
+.m-page .sect-page .card-page .h4-page {
+  font-weight: bold;
+}
+.m-page .sect-page .card-page .para-page {
+  display: flex;
+  justify-content: space-between;
+}
+.m-page .command-btn {
+  border-radius: 30px;
+  background-color: rgb(169, 93, 219);
+  border: none;
+  height: 50px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.m-page .btn-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
